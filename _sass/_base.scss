@@ -95,7 +95,7 @@ aside {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: $theme-dark;
+                color: white;
                 &:hover {
                     color: $theme-primary;
                 }
@@ -116,17 +116,17 @@ aside {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: white;
             &:hover,
             &:focus {
-                color: white;
+                color: $theme-primary;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: white;
             &:hover {
-                color: white;
+                color: $theme-primary;
             }
         }
         &.affix {
@@ -227,10 +227,15 @@ header {
 }
 
 .portfolio-box {
+    overflow: hidden;
     position: relative;
     display: block;
+    max-height: 300px;
     max-width: 650px;
     margin: 0 auto;
+    img{
+        margin:-10% 0;
+    }
     .portfolio-box-caption {
         color: white;
         opacity: 0;
@@ -256,10 +261,10 @@ header {
             .project-category {
                 text-transform: uppercase;
                 font-weight: 600;
-                font-size: 14px;
+                font-size: 12px !important;
             }
             .project-name {
-                font-size: 18px;
+                font-size: 14px !important;
             }
         }
     }
@@ -353,3 +358,7 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+img.change-ratio img{
+    overflow: hidden;
+    margin:-15% 0 !important;
+}
