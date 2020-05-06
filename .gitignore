@@ -1,3 +1,4 @@
 _site/
 _includes/head.html
 .sass-cache/
+_config.yml
