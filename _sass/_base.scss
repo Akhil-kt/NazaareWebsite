@@ -99,6 +99,10 @@ aside {
 }
 
 // Navigation
+button.top {
+    position: relative;
+    z-index: infinite !important;
+}
 
 .navbar-default {
     background-color: white;
