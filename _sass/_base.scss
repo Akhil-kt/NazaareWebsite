@@ -101,7 +101,14 @@ aside {
 // Navigation
 button.top {
     position: relative;
-    z-index: infinite !important;
+}
+
+footer {
+    color: white;
+    background: black;
+    @include sans-serif-font;
+    font: sans-serif-font;
+    text-align: right;
 }
 
 .navbar-default {
