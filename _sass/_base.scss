@@ -58,6 +58,33 @@ p {
 
 }
 
+input {
+  border: 2px solid $theme-primary;
+  border-radius: 4px;
+  width: 100%;
+  color: white;
+  background: black;
+  padding: 10px;
+  margin: 10px;
+
+  
+}
+
+img.secondary {
+    width: 75%;
+    margin: 30px;
+}
+
+textarea {
+    border: 2px solid $theme-primary;
+    border-radius: 4px;
+    width: 100%;
+    color: white;
+    background: black;
+    padding: 10px;
+    margin: 10px;
+}
+
 section {
     padding: 100px 0;
 }
@@ -67,7 +94,7 @@ aside {
 }
 
 .no-padding {
-    padding-top: 3%;
+    padding-top: 50px;
     background-color: black;
 }
 
@@ -96,7 +123,8 @@ aside {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: white;
+                // color: white;
+                color: darkgray;
                 &:hover {
                     color: $theme-primary;
                 }
@@ -184,8 +212,6 @@ header {
         animation-name: blur-out;
         animation-duration: 2s;
         animation-delay: 2s;
-
-        
     }
     .header-content {
         animation-fill-mode: both;
@@ -263,6 +289,10 @@ header {
         animation-duration: 2s;
         animation-delay: .5s;
         font-weight: 700;
+}
+
+.minheight {
+    height: 100vh;
 }
 
 .portfolio-box {
